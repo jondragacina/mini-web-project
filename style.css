@@ -1,0 +1,338 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #1f2933;
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: #0b5394;
+}
+
+/* ---------- Style i navigimit---------- */
+
+.site-header {
+  background-color: #0b2545;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.site-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.site-title span {
+  color: #00b4d8;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.nav-links a:hover {
+  background-color: #13315c;
+}
+
+/* Lidhja e faqes ku ndodheni merr këtë klasë */
+.nav-links a.active {
+  background-color: #00b4d8;
+  color: #0b2545;
+  font-weight: bold;
+}
+
+/* ---------- Pjesa e (hero) ---------- */
+
+.hero {
+  background: linear-gradient(135deg, #0b2545 0%, #13315c 60%, #00b4d8 140%);
+  color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto 24px auto;
+  font-size: 1.1rem;
+}
+
+.button {
+  display: inline-block;
+  background-color: #00b4d8;
+  color: #0b2545;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #48cae4;
+}
+
+/* ---------- Struktura e pergjtihsme ---------- */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.section-gray {
+  background-color: #f1f4f8;
+}
+
+.section-title {
+  color: #0b2545;
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.section-intro {
+  color: #52606d;
+  max-width: 760px;
+  margin-bottom: 32px;
+}
+
+/* Dy kolona afer njera tjetres per tekste dhe figura */
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Kartat informuese -*/
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-top: 4px solid #00b4d8;
+  border-radius: 6px;
+  padding: 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  color: #0b2545;
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: #52606d;
+}
+
+/* Etiket e vogel mbi titullin e kartës, si kodi i kursit ose kategoria */
+.tag {
+  display: inline-block;
+  background-color: #e0f7fc;
+  color: #0b5394;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 2px 10px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+/*  Lidhjet brenda kartave*/
+
+.card-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #0b5394;
+}
+
+/* Tabelat  */
+
+/*  lejon tabelat e gjera të lëvizin në ekrane te vogla */
+.table-wrapper {
+  overflow-x: auto;
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #0b2545;
+  color: #ffffff;
+  text-align: left;
+  padding: 14px 16px;
+}
+
+td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e4e7eb;
+  color: #3e4c59;
+}
+
+/* Çdo rresht i dyt ka sfond thirt per dallim t'leximit */
+tbody tr:nth-child(even) {
+  background-color: #f1f4f8;
+}
+
+/* - Formulari i kontaktit*/
+
+.form-box {
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 32px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #00b4d8;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #0b2545;
+  margin-bottom: 6px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #bcccdc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2933;
+}
+
+textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #00b4d8;
+  border-color: #00b4d8;
+}
+
+/*Të dhënat e kontaktit */
+
+.contact-list {
+  list-style: none;
+}
+
+.contact-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #e4e7eb;
+  color: #3e4c59;
+}
+
+.contact-list strong {
+  color: #0b2545;
+}
+
+/* Footer -*/
+
+.site-footer {
+  background-color: #0b2545;
+  color: #d9e2ec;
+  text-align: center;
+  padding: 24px 20px;
+  font-size: 0.95rem;
+}
+
+.site-footer a {
+  color: #90e0ef;
+}
+/* Per ta bere responsiv ne te gjitha pjisjet -*/
+
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .split {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .form-box {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakti | Teknologjia Arsimore | EdTech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="site-title">Teknologjia Arsimore | <span>EdTech</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Kryefaqja</a></li>
+        <li><a href="about.html">Rreth EdTech</a></li>
+        <li><a href="programi.html">Organizimi</a></li>
+        <li><a href="projects.html">Projektet</a></li>
+        <li><a href="resources.html">Burimet</a></li>
+        <li><a href="contact.html" class="active">Kontakti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+  
+    <section class="hero">
+      <h1>Na kontaktoni</h1>
+      <p>
+        Keni një pyetje për programin, një ide projekti ose një partneritet?
+        Lidhuni me ekipin e fakultetit.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <div class="container split">
+
+        <div>
+          <h2 class="section-title">Informacioni i kontaktit të fakultetit</h2>
+          <p class="section-intro">
+            Orari i konsultimeve është e hënë deri të enjte, 10:00 deri 14:00. Ju lutemi
+            na shkruani me email para se të vini, që të sigurohemi se dikush është i disponueshëm.
+          </p>
+
+          <ul class="contact-list">
+            
+            <li><strong>Email:</strong> <a href="mailto:edtech@university.edu">edtech@university.edu</a></li>
+            <li><strong>Telefoni:</strong> +383 38 000 000</li>
+            <li><strong>Zyra:</strong> Dhoma 214, Ndërtesa e Fakultetit të Edukimit</li>
+            <li><strong>Adresa:</strong> Kampusi Universitar, Prishtinë</li>
+          </ul>
+        </div>
+
+        <div class="form-box">
+          <h2 class="section-title">Dërgo një mesazh</h2>
+
+          <form action="contact.html" method="post">
+
+            <div class="form-group">
+              <label for="full-name">Emri i plotë</label>
+              <input type="text" id="full-name" name="full_name" placeholder="Emri juaj i plotë" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Adresa e email-it</label>
+              <input type="email" id="email" name="email" placeholder="ju@shembull.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="topic">Tema</label>
+              <select id="topic" name="topic">
+                <option value="">Zgjidhni një temë</option>
+                <option value="admissions">Pranimi</option>
+                <option value="projects">Partneritet për projekte</option>
+                <option value="other">Tjetër</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mesazhi</label>
+              <textarea id="message" name="message" placeholder="Shkruani mesazhin tuaj këtu" required></textarea>
+            </div>
+
+            <button type="submit" class="button">Dërgo mesazhin</button>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+ 
+  <footer class="site-footer">
+    <p>Fakulteti i Edukimit | Dega e Teknologjisë Arsimore</p>
+    <p>Email: <a href="mailto:edtech@university.edu">edtech@university.edu</a></p>
+    <p>&copy; 2026 Dega e Teknologjisë Arsimore. Të gjitha të drejtat e rezervuara.</p>
+  </footer>
+
+</body>
+</html>
